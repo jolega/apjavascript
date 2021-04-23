@@ -24,7 +24,7 @@ p va dentro del body bloque de parrafo
           let greetings;
           let numberCharacters;
           let item=0;
-          let ready=5;  //numero de items a mostrar
+          let ready=6;  //numero de items a mostrar
           let newString="";
 
 // DECLARACION DE FUNCIONES
@@ -56,8 +56,8 @@ p va dentro del body bloque de parrafo
                 console.error(" el tipo de dato enviado no es una cadena")
                 }  
            }
-                   //array de textos separados
-                   function textArray(textString){
+        //array de textos separados
+        function textArray(textString){
                 if(validateString(textString)){
                     console.log("la extraccion de la cadena en array es" ,textString.split(" "));
                 }           
@@ -66,10 +66,9 @@ p va dentro del body bloque de parrafo
                 }  
            }
 
-               //repetir texto n veces
-               function textString(textString, numTimes){
-                if(validateString(textString)){
-                   
+         //repetir texto n veces
+        function textString(textString, numTimes){
+                if(validateString(textString)){                 
                     for(i=0; i< numTimes; i ++){
                         newString += " "+ textString ;
                     }
@@ -79,6 +78,23 @@ p va dentro del body bloque de parrafo
                 console.error(" el tipo de dato enviado no es una cadena")
                 }  
            }
+         // operador math
+           function numberMath(){
+               
+            console.log(Math);
+            console.log(Math.PI);
+            console.log(Math.abs(-7,8)); // valor absoluto
+            console.log(Math.ceil(7.2)); // redondeos
+            console.log(Math.floor(7.8));
+            console.log(Math.round(7.8));
+            console.log(Math.sqrt(81));
+            console.log(Math.pow(2,5)); // exponencial
+            console.log(Math.sign(-0.3));  // validar si es positivo negativo o o
+            console.log(Math.random());
+            console.log(Math.random()*1000);
+            console.log(Math.round(Math.random()*1000));
+           }
+
 // EJECUCION DEL CODIGO                  
           do{
             switch(item){
@@ -106,13 +122,17 @@ p va dentro del body bloque de parrafo
                  break;   
                 }
                 case 5:{
-                textString(name,3);   // hacer substring
+                textString(name,3);   // repetir texto n veces
+                 break;   
+                }
+                case 6:{
+                numberMath()  // funciones matematicas
                  break;   
                 }
             }
             item++;
           }while(item <= ready)
            </script>
-           // subir a git
+        
 </body>
 </html>
