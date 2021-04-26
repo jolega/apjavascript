@@ -1,11 +1,9 @@
 //IMPORTACION DE MODULOS .
-
 import {allExercisesOne} from "./exercisesOne.js" // impotar ejercicio one
+import {allExercisesTwo} from "./exercisesTwo.js" // impotar ejercicio one
 import {allPractices} from "./practices.js" // impotar ejercicio one
-
-
 // DECLARACION DE VARIABLES
-export let ready=9;  //numero de items a mostrar
+export let ready=10;  //numero de items a mostrar
 let hello="hola mundo";
 let name="Johan Leonardo"
 let last_Name="Garcia Alonso";  
@@ -13,9 +11,7 @@ let greetings; // saludos
 let numberCharacters;
 let item=0;
 let newString="";
-
 // DECLARACION DE FUNCIONES
-
 export function menu () {
 do{
     switch(item){
@@ -65,10 +61,12 @@ do{
         allPractices.functionAnonymous()  // funcion anonima
          break;   
         }
+        case 10:{
+          allExercisesTwo.investString(name) // funcion invertir
+          break;   
+          }
     }
     item++;
   }while(item <= ready)
-
 }
-
 // EJECUCION DE CODIGO

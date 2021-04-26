@@ -64,11 +64,11 @@ function textString(textString, numTimes){
         console.warn(" el tipo de dato enviado no es una cadena")
         }  
    }
-
    export const allExercisesOne ={
     countString,
     extractCharacters,
     textArray,
-    textString
+    textString,
+    validateString
     }
 // EJECUCION DEL CODIGO  
