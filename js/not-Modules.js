@@ -1,1 +1,1 @@
-console.log("mi navegador no soporte modulos + ES6");
+console.log("mi navegador no soporte modulos + ES6.");
