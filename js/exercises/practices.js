@@ -1,5 +1,5 @@
 //IMPORTACION DE MODULOS
-// DECLARACION DE VARIABLES
+// DECLARACION DE VARIABLES .
 
 function numberMath(){
                

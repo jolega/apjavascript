@@ -1,4 +1,4 @@
-//IMPORTACION DE MODULOS
+//IMPORTACION DE MODULOS .
 
 import {allExercisesOne} from "./exercisesOne.js" // impotar ejercicio one
 import {allPractices} from "./practices.js" // impotar ejercicio one
