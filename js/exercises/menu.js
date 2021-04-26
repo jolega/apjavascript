@@ -30,7 +30,8 @@ do{
         } 
         case 2:{
         allExercisesOne.countString(name);   // contador de String
-        allExercisesOne.countString(1);      // validador de datos
+        allExercisesOne.countString(1);
+        allExercisesOne.countString();       // validador de datos
          break;   
         }                 
         case 3:{
