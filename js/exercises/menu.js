@@ -3,9 +3,10 @@ import {allExercisesOne} from "./exercisesOne.js" // impotar ejercicio one
 import {allExercisesTwo} from "./exercisesTwo.js" // impotar ejercicio one
 import {allPractices} from "./practices.js" // impotar ejercicio one
 // DECLARACION DE VARIABLES
-export let ready=10;  //numero de items a mostrar
+export let ready=13;  //numero de items a mostrar
 let hello="hola mundo";
 let name="Johan Leonardo"
+let name2="Johan Leonardo Leonardo LEONARDO leronard Leonardo"
 let last_Name="Garcia Alonso";  
 let greetings; // saludos
 let numberCharacters;
@@ -36,7 +37,7 @@ do{
          break;   
         }
         case 4:{
-        allExercisesOne.textArray(name);   // hacer substring
+        allExercisesOne.textArray(name);   //array de textos separados
          break;   
         }
         case 5:{
@@ -65,6 +66,21 @@ do{
           allExercisesTwo.investString(name) // funcion invertir
           break;   
           }
+        case 11:{
+          allExercisesTwo.countWordsString(name2,"Leonardo") // contar palabras de un texto
+          break;   
+         }
+        case 12:{
+          allExercisesTwo.validateWordPalydrome(name); //si una palabra o frase dada, es un palíndromo
+          allExercisesTwo.validateWordPalydrome("anita lava la tina");
+          allExercisesTwo.validateWordPalydrome("La ruta nos aporto otro paso natural");
+          break;   
+         }
+        case 13:{  //limine cierto patrón de caracteres de un texto dado
+          allExercisesTwo.removeContentString("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
+          allExercisesTwo.removeContentString(name ,"a");
+          break;   
+         }
     }
     item++;
   }while(item <= ready)

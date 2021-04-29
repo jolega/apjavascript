@@ -1,8 +1,7 @@
 //IMPORTACION DE MODULOS .. 
 // DECLARACION DE VARIABLES
 // DECLARACION DE FUNCIONES
-// valida si es una cadena
- //arrown fuction nombre de la funcion o asignaciona la variable => condicional ? accion si es verdadera : accion si es falsa
+// valida si es una cadena //arrown fuction nombre de la funcion o asignaciona la variable => condicional ? accion si es verdadera : accion si es falsa
 const validateString = (messageString)  =>  (typeof messageString === "string") ? true : false;
 /*
 function validateString(messageString){                
@@ -40,11 +39,12 @@ function extractCharacters(textString,numberCharactersExtract){
    }
 */
 //array de textos separados
-const textArray = (textString) =>  (validateString(textString)) ?  console.log("la extraccion de la cadena en array es" ,textString.split(" ")) : console.warn(" el tipo de dato enviado no es una cadena")
+const textArray = (textString) =>  (validateString(textString))  ?  textString.split(" ") : console.warn(" el tipo de dato enviado no es una cadena")
 /*
 function textArray(textString){
         if(validateString(textString)){
             console.log("la extraccion de la cadena en array es" ,textString.split(" "));
+            return textString.split(" ")
         }           
         else{
         console.warn(" el tipo de dato enviado no es una cadena")
