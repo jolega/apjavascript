@@ -1,8 +1,9 @@
 import {allExercisesOne} from "./exercisesOne.js" // impotar ejercicio one
+
 //5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH".}
 const investString = (textString) => (allExercisesOne.validateString(textString)) ? console.log(`el texto invetido de ${textString} es`, textString.split('').reverse().join('')): console.warn(" el tipo de dato enviado no es una cadena")
 //6) Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2.
-function countWordsString(textString, words){
+const  countWordsString = (textString, words) => {
     let count=0
     if((allExercisesOne.validateString(textString)) && (allExercisesOne.validateString(words)) ){    
         textString= allExercisesOne.textArray(textString);     
@@ -10,9 +11,9 @@ function countWordsString(textString, words){
         console.log(`el numero de veces que el texto ${words} esta es ${count} veces `);   
     }           
     else{ console.warn(" el tipo de dato enviado no es una cadena favor revisar los parametros")}  
-}
+} // otra opcion es indexof(textString,0);
 //7) Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.
-function validateWordPalydrome(textString){
+const  validateWordPalydrome = (textString) => {
     let wordOne="", wordTwo="";
     if(allExercisesOne.validateString(textString)){  
         textString=textString.toLowerCase();
@@ -23,9 +24,9 @@ function validateWordPalydrome(textString){
         else {console.log(`la palabra  ${textString} sin espacio es ${wordOne} NO es palíndromo  es diferente ${wordTwo} `); }
     }           
     else{console.warn(" el tipo de dato enviado no es una cadena favor revisar los parametros")}  
-}
+} // otra solucion es invertirla y comparalo en un if
 //8) Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.
-function removeContentString(textString, parameters){ 
+const  removeContentString = (textString, parameters) => { 
     if(allExercisesOne.validateString(textString) && allExercisesOne.validateString(parameters)){ 
         console.log(`buscar en la frase ${textString} la palabra ${parameters} y eliminarla`)
         let count = [];;
@@ -60,7 +61,7 @@ function removeContentString(textString, parameters){
     else{console.warn(" el tipo de dato enviado no es una cadena favor revisar los parametros")}  
 }
 //eliminar datos de una array
-function removeIndexArray(array,coordinates,count){ array.splice(coordinates,count)}
+const  removeIndexArray = (array,coordinates,count) => { array.splice(coordinates,count)}
     export const allExercisesTwo ={
     investString,
     countWordsString,

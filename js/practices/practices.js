@@ -20,7 +20,7 @@ function numberMath(){
      confirm("hola esto es una confirmacion");
      prompt("hola estos en un promot y permite ingresar datos");
     } 
-  //expresion regular
+  //expresion regular para buscar en una cadena 
   function regularExpression() {
 let cadena ="entrenando hola mundo ej javaScript lorem ";
 let expReg = new RegExp("lorem", "i");  // banderas i ignora myusculas y minisculas, g rodas

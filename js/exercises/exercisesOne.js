@@ -52,7 +52,7 @@ function textArray(textString){
    }
 */
  //repetir texto n veces
-function textString(textString, numTimes){
+const repeattextString  =(textString, numTimes) => {
         let newString="";
         if(validateString(textString)){                 
             for(let i=0; i< numTimes; i ++){
@@ -68,7 +68,7 @@ function textString(textString, numTimes){
     countString,
     extractCharacters,
     textArray,
-    textString,
+    repeattextString,
     validateString
     }
 // EJECUCION DEL CODIGO  
