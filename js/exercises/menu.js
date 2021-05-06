@@ -1,9 +1,10 @@
 //IMPORTACION DE MODULOS .
 import {allExercisesOne} from "./exercisesOne.js" // impotar ejercicio one
-import {allExercisesTwo} from "./exercisesTwo.js" // impotar ejercicio one
-import {allPractices} from "./practices.js" // impotar ejercicio one
+import {allExercisesTwo} from "./exercisesTwo.js" // impotar ejercicio two
+import {allExercisesThree} from "./exercisesThree.js" // impotar ejercicio Three
+import {allPractices} from "../practices/practices.js" // impotar ejercicio practices
 // DECLARACION DE VARIABLES
-export let ready=13;  //numero de items a mostrar
+export let ready=16;  //numero de items a mostrar
 let hello="hola mundo";
 let name="Johan Leonardo"
 let name2="Johan Leonardo Leonardo LEONARDO leronard Leonardo"
@@ -41,7 +42,7 @@ do{
          break;   
         }
         case 5:{
-        allExercisesOne.textString(name,3);   // repetir texto n veces
+        allExercisesOne.repeattextString(name,3);   // repetir texto n veces
          break;   
         }
         case 6:{
@@ -65,22 +66,41 @@ do{
         case 10:{
           allExercisesTwo.investString(name) // funcion invertir
           break;   
-          }
+       }
         case 11:{
           allExercisesTwo.countWordsString(name2,"Leonardo") // contar palabras de un texto
           break;   
-         }
+        }
         case 12:{
           allExercisesTwo.validateWordPalydrome(name); //si una palabra o frase dada, es un palíndromo
           allExercisesTwo.validateWordPalydrome("anita lava la tina");
           allExercisesTwo.validateWordPalydrome("La ruta nos aporto otro paso natural");
+          allExercisesTwo.validateWordPalydrome("Salas");
           break;   
-         }
+       }
         case 13:{  //limine cierto patrón de caracteres de un texto dado
           allExercisesTwo.removeContentString("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
           allExercisesTwo.removeContentString(name ,"a");
           break;   
+        }
+        case 14:{  //generar numero aleatorio
+         allExercisesThree.numberRandom();
+          break;   
+        }
+        case 15:{  //validar si un numero es capicua
+          allExercisesThree.numberCapicua(123);
+          allExercisesThree.numberCapicua(2002);
+          allExercisesThree.numberCapicua(2000);
+          allExercisesThree.numberCapicua(212.212);
+           break;   
          }
+        case 16:{  //factorial de un numero
+        allExercisesThree.numberfactory(5);
+        allExercisesThree.numberfactory(7);
+        allExercisesThree.numberfactory(0);
+        allExercisesThree.numberfactory(-7);
+           break;   
+        }
     }
     item++;
   }while(item <= ready)

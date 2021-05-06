@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+    <title> Asincronia en JavaScript </title>
+</head> 
+<body> 
+    <h1>Aprendo Asincronia en JavaScript</h1>
+    <script>
+//IMPORTACION DE MODULOS
+// DECLARACION DE VARIABLES
+// DECLARACION DE FUNCIONES
+console.log("inicio")
+
+let timerOne = setTimeout(() => {
+    console.log("Ejecutando un setTimeout esto se ejecuta una sola vez a los 3 segundos")
+}, 3000)
+
+let timerTwo = setInterval(() => {
+    console.log("Ejecutando un setInterval esto se ejecuta indefinidamente cada 5 segundos")
+}, 5000)
+
+let timerthree = setInterval(() => {
+   // console.log(new Date().toTimeString())
+    console.log(new Date().toLocaleTimeString()) // muestra un relog
+}, 1000)
+
+//clearTimeout(timerOne);
+//clearInterval(timerOne)
+
+// EJECUCION DEL CODIGO  
+    </script>                 
+</body>
+</html>
